@@ -1,0 +1,4 @@
+xcp-ng
+proxmox
+OpenVZ
+VMware
