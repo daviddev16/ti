@@ -21,7 +21,7 @@ WHILE @@FETCH_STATUS = 0
 		print('Iniciando backup para banco de dados "' + @databaseName + '".')
 		BACKUP DATABASE @databaseName TO DISK = @backupFilePath
 		FETCH NEXT FROM databases_cursor INTO @databaseName
-END
+  END
 
 print('Backups concluídos!')
 
