@@ -1,0 +1,1 @@
+sh mount_hdd.sh -d '/dev/sda1' -p '<passwd>' -f '/media/hdisk'
