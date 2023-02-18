@@ -2,6 +2,12 @@
 files=( "/home/david/eclipse-workspace" "/home/david/IdeaProjects" "/home/david/Área de trabalho" )
 destination_folder="C:\CENTER\BACKUPS\MANJARO-DESKTOP"
 
+if [[ ! $(pacman -Qs 'ssh' && pacman -Qs 'sshpass') ]];
+then
+      echo "openssh ou sshpass não foi encontrado."
+      exit
+fi
+
 while getopts u:p:h: flag
 do
     case "${flag}" in
